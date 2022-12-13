@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Vovel</title>
+    <script>
+
+function countVowel(str) { 
+
+const count = str.match(/[aeiou]/gi).length;
+
+return count;
+}
+
+const string = prompt('Enter a string: ');
+
+const r = countVowel(string);
+
+console.log(r);
+        </script>
+</head>
+<body>
+	
+</body>
+</html>
