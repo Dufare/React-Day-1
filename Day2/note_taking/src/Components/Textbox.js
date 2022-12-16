@@ -8,6 +8,9 @@ export default function Textbox() {
   const changeTextToCapital = () => {
     setText(text.toUpperCase())
   }
+  const changeTextToLower = () =>{
+    setText(text.toLowerCase())
+  }
   const submit =()=> {
     const updatedComment = [...comments,text]
     setComments(updatedComment)
@@ -31,6 +34,7 @@ export default function Textbox() {
         ></textarea>
         <p className="float-start">Count: {text.length}</p>
       <button type="button" class="btn btn-primary col-md-2 mx-2 mt-2" onClick={changeTextToCapital}>Make Capital</button>
+      <button type="button" class="btn btn-primary col-md-2 mx-2 mt-2" onClick={changeTextToLower}>Make Lower</button>
       <button type="button" class="btn btn-primary col-md-2 mx-2 mt-2" onClick={submit}>Add</button>
     </div>
     <div className="container mt-5">
