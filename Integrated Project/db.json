@@ -1,0 +1,211 @@
+{
+  "messages": [
+    {
+      "id": 1,
+      "message": "you are doing good"
+    },
+    {
+      "id": 2,
+      "message": "stand in front of the mirror to see your best friend"
+    },
+    {
+      "id": 3,
+      "message": "today I leave beind all the past traumas"
+    },
+    {
+      "id": 4,
+      "message": "I am in the best of my energy today"
+    },
+    {
+      "id": 5,
+      "message": "I greet people with care and affection"
+    }
+  ],
+  "Books": [
+    {
+      "id": 1,
+      "Title": "Hary Potter",
+      "Author": "Harry Bhai",
+      "Genere": "Action"
+    },
+    {
+      "id": 2,
+      "Title": "Hary Potter",
+      "Author": "Harry Bhai",
+      "Genere": "Action"
+    },
+    {
+      "id": 3,
+      "Title": "Hary Potter",
+      "Author": "Harry Bhai",
+      "Genere": "Action"
+    },
+    {
+      "id": 4,
+      "Title": "Hary Potter",
+      "Author": "Harry Bhai",
+      "Genere": "Action"
+    },
+    {
+      "id": 5,
+      "Title": "Hary Potter",
+      "Author": "Harry Bhai",
+      "Genere": "Action"
+    },
+    {
+      "id": 6,
+      "Title": "Dragon Ball",
+      "Author": "Taika Watiti",
+      "Genere": "Adventure"
+    },
+    {
+      "Title": "Test1 ",
+      "Author": "new",
+      "Genere": "test2",
+      "id": 7
+    },
+    {
+      "Title": "book",
+      "Author": "adddnewtest",
+      "Genere": "test",
+      "id": 8
+    },
+    {
+      "Title": "test",
+      "Author": "test11",
+      "Genere": "tessss",
+      "id": 9
+    },
+    {
+      "Title": "jayesh",
+      "Author": "new book",
+      "Genere": "test book",
+      "id": 10
+    },
+    {
+      "Title": "123",
+      "Author": "dfdf",
+      "Genere": "sff",
+      "id": 11
+    }
+  ],
+  "todos": [
+    {
+      "id": 1,
+      "task": "learn react",
+      "prerequisites": "Javascript",
+      "isDone": false
+    },
+    {
+      "id": 2,
+      "task": "learn mean",
+      "prerequisites": "c#",
+      "isDone": false
+    },
+    {
+      "id": 3,
+      "task": "learn devops",
+      "prerequisites": "Python",
+      "isDone": false
+    },
+    {
+      "id": 4,
+      "task": "learn cloud",
+      "prerequisites": "Java",
+      "isDone": false
+    },
+    {
+      "id": 5,
+      "task": "learn datascience",
+      "prerequisites": "DBMS",
+      "isDone": false
+    }
+  ],
+  "Users": [
+    {
+      "id": 1,
+      "UserName": "Test@123",
+      "Password": "123"
+    }
+  ],
+  "Defects": [
+    {
+      "id": 1,
+      "Category": "learn react",
+      "Description": "Javascript",
+      "Priority": "2"
+    },
+    {
+      "Category": "test1",
+      "Description": "new defect",
+      "Priority": "4",
+      "id": 2
+    },
+    {
+      "Category": "User Interface",
+      "Description": "This is the test defect",
+      "Priority": "1",
+      "id": 3
+    },
+    {
+      "Category": "Functionality",
+      "Description": "This is the test defect 2",
+      "Priority": "3",
+      "id": 4
+    },
+    {
+      "Category": "User Interface",
+      "Description": "sad",
+      "Priority": "sadasd",
+      "id": 7
+    },
+    {
+      "Category": "User Interface",
+      "Description": "sad",
+      "Priority": "sadasd",
+      "id": 8
+    },
+    {
+      "Category": "Function",
+      "Description": "this is samusng",
+      "Priority": "5",
+      "id": 9
+    },
+    {
+      "Category": "User Interface",
+      "Description": "this is samusng",
+      "Priority": "5",
+      "id": 10
+    },
+    {
+      "Category": "Function",
+      "Description": "test",
+      "Priority": "1",
+      "id": 11
+    },
+    {
+      "Category": "select",
+      "Description": "",
+      "Priority": "",
+      "id": 12
+    },
+    {
+      "Category": "User Interface",
+      "Description": "test",
+      "Priority": "12",
+      "id": 13
+    },
+    {
+      "Category": "select",
+      "Description": "test",
+      "Priority": "12",
+      "id": 14
+    },
+    {
+      "Category": "select",
+      "Description": "assad",
+      "Priority": "123",
+      "id": 15
+    }
+  ]
+}
