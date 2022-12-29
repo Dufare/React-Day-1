@@ -9,6 +9,7 @@ const AddDefects = () => {
   const [Category, setCategory] = useState("");
   const [Description, setDescription] = useState("");
   const [Priority, setPriority] = useState("");
+  const [Status, setStatus] = useState("Open");
   const [success, setSuccess] = useState(false);
   const [addDefect, setDefect] = useState(false);
   const [viewDefect, setViewDefect] = useState(false);
@@ -22,7 +23,7 @@ const AddDefects = () => {
 
   function saveDefect() {
     // POST EFFECT
-    let data = { Category:Category.label, Description, Priority };
+    let data = { Category:Category.label, Description, Priority,Status };
     fetch("http://localhost:5000/Defects", {
       method: "POST",
       headers: {

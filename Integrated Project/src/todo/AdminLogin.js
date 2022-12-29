@@ -1,52 +1,27 @@
-import React, { useReducer, useRef } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
-import AddDefects from "./AddDefects";
+import React, { useRef } from "react";
 import AllDefects from "./AllDefects";
 
-const LogIn = () => {
-  const navigate = useNavigate();
-  const UserName = useRef();
-  const Password = useRef();
+const AdminLogin = () => {
   const AdminUserName = useRef();
   const AdminPassword = useRef();
 
-  const getUserName = localStorage.getItem("UserName");
-  const getPassword = localStorage.getItem("Password");
-  
+  const admingetUserName = localStorage.getItem("AdminUserName");
+  const admingetPassword = localStorage.getItem("AdminPassword");
 
   const handleSubmit = () => {
     if (
-      UserName.current.value == "Test@123" &&
-      Password.current.value == "81033"
+      AdminUserName.current.value == "Admin@123" &&
+      AdminPassword.current.value == "8103"
     ) {
-      localStorage.setItem("UserName", "Test@123");
-      localStorage.setItem("Password", "81033");
-      navigate("/AddDefects")
-
-    }
-
-    else if(
-        UserName.current.value == "Admin@123" &&
-        Password.current.value == "8103"
-    )
-    {
-      localStorage.setItem("UserName", "Admin@123");
-      localStorage.setItem("Password", "8103");
-      navigate("/AllDefects")
+      localStorage.setItem("AdminUserName", "Admin@123");
+      localStorage.setItem("AdminPassword", "8103");
     }
   };
-
   return (
     <>
-   
-      {/* ?{getUserName && getPassword ? (
-        <AddDefects />
-      ): */}
-      
-
-
-      (
-
+      {admingetUserName && admingetPassword ? (
+        <AllDefects />
+      ) : (
         
         <div className="conatiner mx-auto my-5  w-50 px-3 border rounded">
           <form className="container mx-3 my-3">
@@ -57,7 +32,7 @@ const LogIn = () => {
               <input
                 type="email"
                 class="form-control"
-                ref={UserName ||AdminUserName}
+                ref={AdminUserName}
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
               />
@@ -72,7 +47,7 @@ const LogIn = () => {
               <input
                 type="password"
                 class="form-control"
-                ref={Password ||AdminPassword}
+                ref={AdminPassword}
                 id="exampleInputPassword1"
               />
             </div>
@@ -100,4 +75,4 @@ const LogIn = () => {
   );
 };
 
-export default LogIn;
+export default AdminLogin;

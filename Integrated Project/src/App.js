@@ -14,6 +14,9 @@ import AddNewBook from "./todo/AddNewBook";
 import AddDefects from "./todo/AddDefects";
 import AllDefects from "./todo/AllDefects";
 import LogIn from "./todo/LogIn";
+import AdminLogin from "./todo/AdminLogin";
+import Person from "./Props/Person";
+
 function App() {
  
   return (
@@ -34,6 +37,10 @@ function App() {
         <Route path="/AddNewBook" element={<AddNewBook/>}/>
         <Route path="/AddDefects" element={<AddDefects/>}/>
         <Route path="/AllDefects" element={<AllDefects/>}/>
+        <Route path="/AdminLogin" element={<AdminLogin/>}/>
+        <Route path="/person" element={<Person/>}/>
+        
+
         
 
         

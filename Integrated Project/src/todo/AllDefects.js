@@ -6,6 +6,9 @@ const AllDefects = () => {
     const [defects, setDefects] = useState([]);
     const [query , setQuery]=useState("");
     const [query2 , setQuery2]=useState("");
+   
+    
+    
     
    
     const fetchDefects = async () => {
@@ -55,8 +58,8 @@ const AllDefects = () => {
       <td>{defect.Description}</td>
       <td key={defect.Priority}>{defect.Priority}</td>
       
-      <td>Open</td>
-      <td>Closed Defect</td>
+      <td>{defect.Status}</td>
+      <td><button type="button" class="btn btn-primary">Close Status</button></td>
     </tr>
               )})}
    
